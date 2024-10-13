@@ -1,8 +1,8 @@
 const themeButtons = document.querySelectorAll('.header__theme-menu-button');
 
-themeButtons.forEach((button) => {
+themeButtons.forEach(button => {
   button.addEventListener('click', () => {
-    themeButtons.forEach((btn) => {
+    themeButtons.forEach(btn => {
       btn.classList.remove('header__theme-menu-button_active');
       btn.removeAttribute('disabled');
     });
@@ -32,7 +32,7 @@ function initTheme() {
   const theme = localStorage.getItem('theme');
   if (theme) {
     changeTheme(theme);
-    themeButtons.forEach((btn) => {
+    themeButtons.forEach(btn => {
       btn.classList.remove('header__theme-menu-button_active');
       btn.removeAttribute('disabled');
     });

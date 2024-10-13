@@ -3,3 +3,7 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+.title-decor {
+  background-color: var(--accent-color);
+}

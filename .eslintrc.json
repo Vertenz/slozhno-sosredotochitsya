@@ -1,0 +1,47 @@
+{
+    "extends": ["eslint:recommended", "prettier"],
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 12,
+      "sourceType": "module"
+    },
+    "rules": {
+      "semi": ["error", "always"],
+      "quotes": ["error", "double"],
+      "no-unused-vars": ["warn"],
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "semi": true
+        }
+      ]
+    },
+    "plugins": ["prettier", "@html-eslint"],
+    "overrides": [
+      {
+        "files": ["**/*.html"],
+        "parser": "@html-eslint/parser",
+        "plugins": ["@html-eslint"],
+        "rules": {
+          "@html-eslint/require-closing-tags": "error",
+          "@html-eslint/require-doctype": "error",
+          "@html-eslint/require-lang": "error",
+          "@html-eslint/require-title": "warn",
+          "@html-eslint/no-multiple-h1": "error",
+          "@html-eslint/indent": ["error", 2],
+          "@html-eslint/element-newline": ["error", {
+            "skip": ["span", "a"]
+          }],
+          "@html-eslint/attrs-newline": ["error", {
+            "ifAttrsMoreThan": 2,
+            "closeStyle": "newline"
+          }]
+        }
+      }
+    ]
+  }
+  

@@ -1,4 +1,5 @@
 module.exports = {
+  extends: ['stylelint-config-html'], // Add this to enable HTML parsing
   rules: {
     'color-no-invalid-hex': true,
     'value-keyword-case': ['lower', { camelCaseSvgKeywords: true }],
@@ -27,4 +28,10 @@ module.exports = {
     'selector-class-pattern': null,
     'font-family-name-quotes': 'always-where-recommended',
   },
+  overrides: [
+    {
+      files: ['*.html', '**/*.html'],
+      customSyntax: 'postcss-html', // Enable HTML parsing using postcss-html
+    },
+  ],
 };
