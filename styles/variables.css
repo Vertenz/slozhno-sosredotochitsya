@@ -5,12 +5,15 @@
 
 :root {
   --background-color: #000028;
+  --background-image: url(../images/cover-image-dark.png);
 
-  --base-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --contrast-color: #DB00FF;
+  --base-color: #f1b2ce;
+  --accent-color: #ff0070;
+  --contrast-color: #db00ff;
 
-  --aside: 20px;
+  --aside: 10px;
 
   --text-shadow: 4px 4px 0 var(--accent-color);
+
+  --transition-default: 0.3s ease-in-out;
 }
