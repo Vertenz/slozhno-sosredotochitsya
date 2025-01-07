@@ -5,15 +5,15 @@
 
 :root {
   --background-color: #000028;
-  --background-image: url(../images/cover-image-dark.png);
-
-  --base-color: #f1b2ce;
-  --accent-color: #ff0070;
-  --contrast-color: #db00ff;
-
-  --aside: 10px;
-
-  --text-shadow: 4px 4px 0 var(--accent-color);
-
+  --accent-color: #FF0070;
+  --text-color: #F1B2CE;
+  --highlight-color: #DB00FF;
+  --shadow-highlight-color: #FF0070;
+  --accent-background: #FF0070;
+  --text-on-accent: #000028;
+  --button-color-rgb: 255, 0, 112;
+  --text-shadow: 4px 4px 0 var(--shadow-highlight-color);
   --transition-default: 0.3s ease-in-out;
+  --background-image: url(../images/cover-image-dark.png);
+  --aside: 10px;
 }

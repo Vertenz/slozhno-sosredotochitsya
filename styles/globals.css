@@ -40,4 +40,19 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  cursor: pointer;
+  text-transform: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  text-shadow: 2px 1px var(--shadow-highlight-color);
+  border-block-end: 1px solid;
+  border-color: transparent;
+  transition: border-color var(--transition-default);
+}
+
+a:hover {
+  border-color: var(--secondary-color);
 }
