@@ -59,8 +59,8 @@
 }
 
 .header {
-  display: flex;
-  justify-content: flex-end;
+  min-block-size: 100vh;
+  min-block-size: 100dvh;
   padding-block-start: 64px;
 
   @media (width >= 768px) {
@@ -69,6 +69,14 @@
 
   @media (width >= 1024px) {
     padding-block-start: 0;
+  }
+}
+
+.header__theme-menu {
+  display: flex;
+  justify-content: end;
+
+  @media (width >= 1024px) {
     justify-content: center;
   }
 }
