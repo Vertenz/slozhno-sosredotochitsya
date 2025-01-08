@@ -17,3 +17,9 @@
   --background-image: url(../images/cover-image-dark.png);
   --aside: 10px;
 }
+
+@media (width >= 768px) {
+  :root {
+    --aside: 20px;
+  }
+}
