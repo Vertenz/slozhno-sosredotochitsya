@@ -13,7 +13,6 @@
   --text-on-accent: #000028;
   --button-color-rgb: 255, 0, 112;
   --text-shadow: 4px 4px 0 var(--shadow-highlight-color);
-  --transition-default: 0.3s ease-in-out;
   --background-image: url(../images/cover-image-dark.png);
   --aside: 10px;
 }

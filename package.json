@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo 'Привет!'",
     "check": "prettier --check './**/*.{html,css,js}'",
     "format": "prettier --write './**/*.{html,css,js}'",
     "lint": "stylelint '**/*.css'",
@@ -19,10 +18,13 @@
     "eslint-config-prettier": "^9.1.0",
     "postcss-html": "^1.7.0",
     "prettier": "^3.3.3",
-    "stylelint": "^16.10.0",
-    "stylelint-config-html": "^1.1.0"
+    "stylelint": "^16.11.0",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-use-logical": "^2.1.2"
   },
   "dependencies": {
+    "stylelint-config-standard": "^37.0.0",
     "stylelint-use-logical": "^2.1.2"
   }
 }

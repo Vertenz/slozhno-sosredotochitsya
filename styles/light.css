@@ -20,13 +20,30 @@
     --text-on-accent: #353430;
     --button-color-rgb: 53, 52, 48;
     --background-image: url(../images/cover-image-light.png);
-    --aside: 10px;
     --text-shadow: 4px 4px 0 var(--shadow-highlight-color);
-    --transition-default: 0.3s ease-in-out;
 
     .page__decor {
       display: none;
-    }
+    }  
+}
+
+@media (prefers-color-scheme: light) {
+  :root { 
+    --background-color: #FFF1F7;
+    --accent-color: #353430;
+    --text-color: #353430;
+    --highlight-color: #FFC2E6;
+    --shadow-highlight-color: #FF8DCB;
+    --accent-background: #FF8DCB;
+    --text-on-accent: #353430;
+    --button-color-rgb: 53, 52, 48;
+    --background-image: url(../images/cover-image-light.png);
+    --text-shadow: 4px 4px 0 var(--shadow-highlight-color);
+
+    .page__decor {
+      display: none;
+    }  
+  }
 }
 
 

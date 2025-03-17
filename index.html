@@ -11,16 +11,16 @@
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" type="image/svg+xml" href="/images/favicon.ico" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
     <title>Сложно сосредоточиться</title>
   </head>
 
   <body class="page">
-    <p aria-hidden="true" class="page__decor">REC</p>
-
     <header class="header decorated-zone">
+      <p aria-hidden="true" class="header__decor">REC</p>
+
       <nav class="header__theme-menu">
         <ul class="header__theme-menu-list">
           <li class="header__theme-menu-item">
@@ -50,22 +50,24 @@
         </ul>
       </nav>
 
-      <section class="hero">
-        <h1 class="hero__title">no focus</h1>
+      <div class="hero">
+        <h1 class="title">no focus</h1>
 
         <div class="hero__block">
-          <span class="hero__block__figure"></span>
+          <p class="hero__block__text title-decor">
+            <span>
+                Что делать, когда не можешь делать ничего
+            </span>
 
-          <p class="hero__block__text">
-            Что делать, когда не можешь делать ничего Или почему нам так сложно
-            сконцентрироваться, особенно когда очень надо
+            <span>
+                Или почему нам так сложно сконцентрироваться, особенно когда очень надо
+            </span>
           </p>
         </div>
-      </section>
+      </>
     </header>
 
     <main class="main">
-      <section class="info">
         <section class="info-section">
           <h2 class="info-section__title">Почему сосредоточиться так сложно</h2>
 
@@ -157,7 +159,7 @@
             секунд)
           </h2>
 
-          <h3 class="info-section__subtitle">
+          <h3 class="info-block__title">
             5 простых (на самом деле не очень) советов
           </h3>
 
@@ -234,47 +236,61 @@
             </p>
           </article>
         </section>
-      </section>
 
       <section class="images-section">
         <h2 class="info-block__title">А можно в картинках?</h2>
 
-        <div class="gallery">
-          <img
-            class="gallery__image"
-            src="images/sunset.png"
-            alt="Закат над морем: Солнце садится за горизонтом над морем, на фоне гор и птиц в небе."
-          />
+        <ul class="gallery">
+          <li class="gallery__element">
+            <img
+              class="gallery__image"
+              src="images/sunset.png"
+              loading="lazy"
+              alt="Закат над морем: Солнце садится за горизонтом над морем, на фоне гор и птиц в небе."
+            />
+          </li>
 
-          <img
-            class="gallery__image"
-            src="images/ice-cream.png"
-            alt="Мороженое с котиком: Десерт из мороженого в виде котика, украшенный фруктами, сливками и вафельными трубочками."
-          />
+          <li class="gallery__element">
+            <img
+              class="gallery__image"
+              src="images/ice-cream.png"
+              loading="lazy"
+              alt="Мороженое с котиком: Десерт из мороженого в виде котика, украшенный фруктами, сливками и вафельными трубочками."
+            />
+          </li>
 
-          <img
-            class="gallery__image"
-            src="images/tape.png"
-            alt="Ретро-кассета: Аудиокассета с элементами ретро-эстетики и графическим интерфейсом."
-          />
+          <li class="gallery__element">
+            <img
+              class="gallery__image"
+              src="images/tape.png"
+              loading="lazy"
+              alt="Ретро-кассета: Аудиокассета с элементами ретро-эстетики и графическим интерфейсом."
+            />
+          </li>
 
-          <img
-            class="gallery__image"
-            src="images/books.png"
-            alt="Книги и чай: Стопка книг с чашкой чая сверху, вокруг звездочки."
-          />
+          <li class="gallery__element">
+            <img
+              class="gallery__image"             
+              src="images/books.png"
+              loading="lazy"
+              alt="Книги и чай: Стопка книг с чашкой чая сверху, вокруг звездочки."
+            />
+          </li>
 
-          <img
-            class="gallery__image"
-            src="images/street.png"
-            alt="Улица с сакурой: Городская улица с домами и цветущими деревьями сакуры."
-          />
-        </div>
+          <li class="gallery__element">
+            <img
+              class="gallery__image"
+              src="images/street.png"
+              loading="lazy"
+              alt="Улица с сакурой: Городская улица с домами и цветущими деревьями сакуры."
+            />
+          </li>
+        </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <p>focus</p>
+      <p class="title title_footer">focus</p>
     </footer>
     <script src="./scripts/script.js"></script>
   </body>

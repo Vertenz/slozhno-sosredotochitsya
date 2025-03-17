@@ -9,4 +9,29 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --background-color: #000028;
+  --accent-color: #FF0070;
+  --text-color: #F1B2CE;
+  --highlight-color: #DB00FF;
+  --shadow-highlight-color: #FF0070;
+  --accent-background: #FF0070;
+  --text-on-accent: #000028;
+  --button-color-rgb: 255, 0, 112;
+  --text-shadow: 4px 4px 0 var(--shadow-highlight-color);
+  --background-image: url(../images/cover-image-dark.png);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #000028;
+    --accent-color: #FF0070;
+    --text-color: #F1B2CE;
+    --highlight-color: #DB00FF;
+    --shadow-highlight-color: #FF0070;
+    --accent-background: #FF0070;
+    --text-on-accent: #000028;
+    --button-color-rgb: 255, 0, 112;
+    --text-shadow: 4px 4px 0 var(--shadow-highlight-color);
+    --background-image: url(../images/cover-image-dark.png); 
+  }  
 }
